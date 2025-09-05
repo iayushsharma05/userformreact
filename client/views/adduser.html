@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adduser</title>
+</head>
+<body>
+     <div className="container mt-5">
+                <h2 className="mb-4 text-center">User Information Form</h2>
+                <form action="../addusersuccess" method="post">
+                    {/* <!-- Full Name --> */}
+                    <div className="mb-3">
+                        <label for="fullName" className="form-label">Full Name</label>
+                        <input type="text" className="form-control" name="fname" id="fullName" placeholder="Enter your full name" required />
+                    </div>
+
+                    {/* <!-- Email --> */}
+                    <div className="mb-3">
+                        <label for="email" className="form-label">Email address</label>
+                        <input type="email" className="form-control" name="email" id="email" placeholder="name@example.com" required />
+                    </div>
+
+                    {/* <!-- Phone Number --> */}
+                    <div className="mb-3">
+                        <label for="phone" className="form-label">Phone Number</label>
+                        <input type="tel" className="form-control" name="phone" id="phone" placeholder="Enter your phone number" required />
+                    </div>
+
+                    {/* <!-- Date of Birth --> */}
+                    <div className="mb-3">
+                        <label for="dob" className="form-label">Date of Birth</label>
+                        <input type="date" className="form-control" name="dob" id="dob" />
+                    </div>
+
+                    {/* <!-- Address --> */}
+                    <div className="mb-3">
+                        <label for="address" className="form-label">Address</label>
+                        <textarea className="form-control" name="address" id="address" rows="3" placeholder="Enter your address"></textarea>
+                    </div>
+
+                    {/* <!-- Submit Button --> */}
+                    <div className="mb-3">
+                        <button type="submit" className="btn btn-primary">Submit</button>
+                    </div>
+                    <div className="mb-3">
+                        <button type="reset" className="btn btn-danger">Reset</button>
+                    </div>
+                </form>
+            </div>
+</body>
+</html>
